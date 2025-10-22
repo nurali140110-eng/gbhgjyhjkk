@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Форма авторизации -->
+  <div class="login-container" id="login-container">
+    <h2>Вход в систему</h2>
+    <input type="text" id="username" placeholder="Логин" />
+    <input type="password" id="password" placeholder="Пароль" />
+    <button id="login-btn">Войти</button>
+    <p class="error" id="error-msg"></p>
+  </div>
+ 
+  <!-- Личный кабинет -->
+  <div class="dashboard hidden" id="dashboard">
+    <div class="dashboard-header">
+      <h2 id="welcome"></h2>
+      <button id="logout-btn">Выйти</button>
+    </div>
+    <div class="dashboard-content">
+      <h3>Добро пожаловать в ваш личный кабинет 🎉</h3>
+      <p>Ваш email: <span id="user-email"></span></p>
+      <p>Это пример панели пользователя — вы можете оформить её под интернет-магазин, учебный портал и т.д.</p>
+    </div>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
